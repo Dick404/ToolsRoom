@@ -1,0 +1,23 @@
+                    About BootStrape Modal Process
+  BootStrape is a CSS's master , so they use CSS samulating the window that looks like a new one generated.
+  In fact, they create a black block that it's opacity is one and Z-index is low as "backdrop"(thay call them this name).The body looks like a large canvas.If we cover it with a black silk(si)£¬and put on our new cloth we need , you guess what will happen? We can watch its bottom clear and we generate a new window!(look like...)
+So,it is. Today,I find the truth by tracking it's JS code on chrome.
+Tomorrow,I will try to use my hand to create a new Modal belongs to me~ 
+
+
+
+
+
+PS:
+  list of jQuery method I find.
+    1.$===jQuery (if you don't call the noConflict() method)
+    2.$(selector).on(String,selector,data,function(e))  String is a Event named by someEvent in jQuery with namespace or not.For example:'click.bs.modal.data-api' this is a event with namespace.
+    3.|| and && can be used flexiablely.
+    4. $.data() and .data()   $.data(DOM element,Key,value) save some data into DOM element , I think lots of programer did this...jQuery give us API to achieve the goal.  $(selector).data(key,value) is similar to previous, the only differ is the element need you choose or not.
+    5.Below e is a example in jQuery.It indicates event of packaged by jQuery e.tagert indicates a element trigger a event.It has lost of other prictical property. Like e.preventDefault() method can prevent the hyperlinks redirect.
+    6.    $(selector).one() only run once listener. arguments like .on().
+    7.    $(selector).off(event,selector[,handler(function())]) remove the listener.
+    8.     .call(directObj[,arg[0],arg[1].....])  run to another place.
+    9.    $(selector).each(function(){native code})  traversal all of elemet of selector.
+
+    10.    $.extend({},Obj1,Obj2.....)
